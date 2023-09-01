@@ -2,37 +2,37 @@
 
 [](#)
 
-[1 Basics](#basics)
+[1. Basics](#basics)
 
-[2 Arrays](#arrays)
+[2. Arrays](#arrays)
 
-[3 Pointers](#pointers)
+[3. Pointers](#pointers)
 
-[4 Functions](#functions)
+[4. Functions](#functions)
 
-[5 Object Oriented Programming](#object-oriented-programming)
+[5. Object Oriented Programming](#object-oriented-programming)
 
-[6 Operator Overloaing](#operator-overloading)
+[6. Operator Overloaing](#operator-overloading)
 
-[7 Inheritance](#inheritance)
+[7. Inheritance](#inheritance)
 
-[8 Polymorphism](#polymorphism)
+[8. Polymorphism](#polymorphism)
 
-[9 Friend and Static Members](#friend-and-static-members)
+[9. Friend and Static Members](#friend-and-static-members)
 
-[10 Exception Handling](#exception-handling)
+[10. Exception Handling](#exception-handling)
 
-[11 Template Classes](#template-classes)
+[11. Template Classes](#template-classes)
 
-[12 Constants Preprocessors and Namespaces](#constants-preprocessors-and-namespaces)
+[12. Constants Preprocessors and Namespaces](#constants-preprocessors-and-namespaces)
 
-[13 Destructors](#destructors)
+[13. Destructors](#destructors)
 
-[14 IO Stream](#iostream)
+[14. IO Stream](#iostream)
 
-[15 Standard Template Library](#standard-template-library)
+[15. Standard Template Library](#standard-template-library)
 
-[16 C++11](#cpp11)
+[16. C++11](#cpp11)
 
 # Basics
 

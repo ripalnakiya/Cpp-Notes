@@ -1,7 +1,5 @@
 # Table of Contents
 
-[](#)
-
 [1. Basics](#basics)
 
 [2. Arrays](#arrays)

@@ -170,6 +170,7 @@ Generalization
 - Derived classes already exists, but to simplify things we make a generalized Base class.
 - We can use a generalized(same) name for different classes : polymorphic
 - For example, Car - Innova, Swift, Fortuner
+  - We only need to learn How to Drive a car, then we can ride any car we want (Innova, Swift, Fortuner)
 - Purpose of Generalization is to achieve `Polymorphism`
 
 Specialization
@@ -178,6 +179,7 @@ Specialization
 - Derived classes are inherited from already existing base class (More specilized version of base class is made)
 - It shares it features to its child classes
 - For example, Rectangle - Cuboid
+  - Cuboid inherits the features of Rectangle.
 - Purpose of Specialization is to achieve `Inheritance`
 
 ## Base Class Pointer and Derived Class Object

@@ -1549,11 +1549,11 @@ int main()
 ```
 
 ```cpp
-class Base                                  // Abstract class - Interface
+class Base                                  // Interface
 {
 public:
-    virtual void fun1()=0;
-    virtual void fun2()=0;
+    virtual void fun1()=0;                  // Pure virtual function
+    virtual void fun2()=0;                  // Pure virtual function
 };
 
 class Derived :public Base
@@ -1580,7 +1580,7 @@ int main()
 
 - Base class with All Concrete Functions
 
-  - Purpose of this base class is to achieve **Resuability**.
+  - Purpose of this base class is to achieve **Resuability** (That is, Inheritance).
 
 - Base class with Some concrete functions and Some Pure Virtual Functions
 

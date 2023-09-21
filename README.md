@@ -1422,8 +1422,16 @@ public:
 
 int main()
 {
-    Derived d;
-    d.fun( );               => fun of Derived
+    Base *b = new Base();
+    b->fun();                       => fun of Base
+
+    Derived *d = new Derived();
+    d->fun( );                      => fun of Derived
+
+    // Base class pointer assumes that it is pointing to the base class object, so It will only access the base class methods.
+    Base *b = new Derived();
+    b->fun();                       => fun of Base
+    // This didn't called Drived Class Method, It happened because the Base class function is not declared virtual.
 }
 ```
 
@@ -1459,7 +1467,38 @@ void main()
 
 ## Runtime Polymorphism
 
-Runtime Polymorphism is achieved using function overriding
+Runtime Polymorphism is achieved using function overriding.
+
+```cpp
+class BasicCar
+{
+public:
+    virtual void start(){cout<<"BasicCar Started"<<endl;}       // Virtual function
+};
+
+class AdvanceCar: public BasicCar
+{
+public:
+    void start(){cout<<"AdvanceCar Started"<<endl;}
+};
+
+void main()
+{
+    BasicCar *p = new AdvanceCar();
+    p->start();                             => AdvanceCar Started
+
+    p = new BaseCar();
+    p->start();                             => BasicCar Started
+}
+```
+
+The binding of `start()` happens at runtime, becuase it has to know that what object will be given to the pointer.
+
+And the allocation of the object happens at runtime.
+
+So, which function `p->start()` has to call will be resolved at runtime.
+
+---
 
 Summary: class car is defined, then sub classes override, then base class method made as pure virtual function
 
@@ -1484,9 +1523,9 @@ public:
 
 int main()
 {
-    Car *p=new Innova();
+    Car *p = new Innova();
     p->start();                             => Innova Started
-    p=new Swift();
+    p = new Swift();
     p->start();                             => Swift Started
 }
 ```

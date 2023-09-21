@@ -225,6 +225,8 @@ Once the BasicCar pointer is assigned AdvanceCar object
 Hence we **cannot** access the AdvanceCar methods.
 
 > Note : Data members are accessed according to the type of pointer we have. and NOT according to the object we have got.
+>
+> Base Class Pointer can Hold the object of Derived class, But It can only call those methods which are defined in the Base class.
 
 **Branch 2**
 

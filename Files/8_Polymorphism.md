@@ -56,7 +56,7 @@ void main()
 }
 ```
 
-When a base class function is declared virtual and it is overridden in derived class,
+**When** a Base class function is declared virtual and it is overridden in derived class,
 
 - then the function call will not be based on the pointer , it will be based on the Object.
 

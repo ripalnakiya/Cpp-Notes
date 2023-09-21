@@ -1370,6 +1370,8 @@ Once the BasicCar pointer is assigned AdvanceCar object
 Hence we **cannot** access the AdvanceCar methods.
 
 > Note : Data members are accessed according to the type of pointer we have. and NOT according to the object we have got.
+>
+> Base Class Pointer can Hold the object of Derived class, But It can only call those methods which are defined in the Base class.
 
 **Branch 2**
 
@@ -1447,9 +1449,9 @@ void main()
 }
 ```
 
-When a base class function is declared virtual and it is overridden in derived class,
+**When** a Base class function is declared virtual and it is overridden in derived class,
 
-- then the function call will not be based on the pointer , it will be based on the Object.
+- then the function call will not be based on the pointer, it will be based on the Object.
 
 - Here, the AdvanceCar start() will be called because
   - The base class function is overridden by derived class

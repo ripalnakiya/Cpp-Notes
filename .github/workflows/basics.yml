@@ -1,0 +1,40 @@
+name: Build 1_Basics.md from Files
+
+on:
+  push:
+    paths:
+      - Files/1_Basics/**
+      - scripts/build_basics_readme.py
+
+permissions:
+  contents: write
+
+concurrency:
+  group: repo-write
+  cancel-in-progress: false
+
+jobs:
+  build-1-basics:
+    # Only run this job for human-triggered pushes.
+    # Bot-triggered pushes (from auto-commits) are ignored to avoid recursion.
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Build 1_Basics.md
+        run: python scripts/build_basics_readme.py
+
+      - name: Commit 1_Basics.md
+        run: |
+          if git diff --quiet; then
+            echo "No changes to commit"
+            exit 0
+          fi
+
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+          git add 1_Basics.md
+          git commit -m "Auto-update 1_Basics.md from Files"
+          git push

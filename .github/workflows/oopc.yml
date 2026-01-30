@@ -1,0 +1,40 @@
+name: Build 2_OOPC.md from Files
+
+on:
+  push:
+    paths:
+      - Files/2_OOPC/**
+      - scripts/build_oopc_readme.py
+
+permissions:
+  contents: write
+
+concurrency:
+  group: repo-write
+  cancel-in-progress: false
+
+jobs:
+  build-2-oopc:
+    # Only run this job for human-triggered pushes.
+    # Bot-triggered pushes (from auto-commits) are ignored to avoid recursion.
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Build 2_OOPC.md
+        run: python scripts/build_oopc_readme.py
+
+      - name: Commit 2_OOPC.md
+        run: |
+          if git diff --quiet; then
+            echo "No changes to commit"
+            exit 0
+          fi
+
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+          git add 2_OOPC.md
+          git commit -m "Auto-update 2_OOPC.md from Files"
+          git push

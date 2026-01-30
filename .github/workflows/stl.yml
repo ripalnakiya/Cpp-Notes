@@ -1,0 +1,40 @@
+name: Build 3_STL.md from Files
+
+on:
+  push:
+    paths:
+      - Files/3_STL/**
+      - scripts/build_stl_readme.py
+
+permissions:
+  contents: write
+
+concurrency:
+  group: repo-write
+  cancel-in-progress: false
+
+jobs:
+  build-3-stl:
+    # Only run this job for human-triggered pushes.
+    # Bot-triggered pushes (from auto-commits) are ignored to avoid recursion.
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Build 3_STL.md
+        run: python scripts/build_stl_readme.py
+
+      - name: Commit 3_STL.md
+        run: |
+          if git diff --quiet; then
+            echo "No changes to commit"
+            exit 0
+          fi
+
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+          git add 3_STL.md
+          git commit -m "Auto-update 3_STL.md from Files"
+          git push

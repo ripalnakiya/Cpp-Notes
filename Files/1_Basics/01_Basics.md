@@ -1,6 +1,8 @@
-# Theory
+# Basics
 
-## Compiler vs Interpreter
+## Theory
+
+### Compiler vs Interpreter
 
 - Compilation of source code is done only once
 - Compiler generates a separate executable(.exe) file
@@ -13,7 +15,7 @@
 - Interpreted programs are slow because they get executed inside the interpreter
 - Language is difficult (program executes until the error is encountered)
 
-## Programming Paradigm
+### Programming Paradigm
 
 - Monolothic Programming (single file - entire program)
 - Procedural/Modular/Functional Programming (Breaking the program into functions : C language)
@@ -21,9 +23,9 @@
 
 ---
 
-# Basics
+## Basic Concepts
 
-## Datatypes
+### Datatypes
 
 - Int data type range (Assuming 2 bytes)
   bits : 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
@@ -60,7 +62,7 @@
 >
 > we has to find 2's complement of this number and then convert it to decimal and then add -ve sign.
 
-## Data type modifiers
+### Data type modifiers
 
 - usigned (can only be used with int and char)
 
@@ -82,7 +84,7 @@
 
   > **Note:** : long float = double , so no need to use long float
 
-## Initialization
+### Initialization
 
 These are different ways to initialize int
 
@@ -94,7 +96,7 @@ These are different ways to initialize int
     int day = {1};
 ```
 
-## Literals
+### Literals
 
 ```cpp
     int a = 10;
@@ -114,7 +116,7 @@ These are different ways to initialize int
     char section = 65;
 ```
 
-### Coersion
+#### Coersion
 
 If a value is converted to required datatype internally, then it is called coersion.
 
@@ -134,7 +136,7 @@ If a value is converted to required datatype internally, then it is called coers
     float x = 123e-2F;       => 1.23
 ```
 
-## Operators and Expressions
+### Operators and Expressions
 
 If two integers are divided then, the result will also be of the integer type;
 
@@ -160,7 +162,7 @@ To get original result
 
 > **Note:** : % operator can be performed on "int" and "char" , but not on "float"
 
-### Compound Assignment
+#### Compound Assignment
 
 ```cpp
     sum = sum + a + b + c;
@@ -172,7 +174,7 @@ is same as the following
     sum += a + b + c;
 ```
 
-## Overflow
+### Overflow
 
 When the datatype value is increased by its limit, then it will overflow
 and the result will be in cyclic order. (-128 | 0 | 127)
@@ -189,7 +191,7 @@ and the result will be in cyclic order. (-128 | 0 | 127)
     cout<<(int)d<<endl;         => 127 //since -129 value doesn't exist for char
 ```
 
-## Left shift and right shift
+### Left shift and right shift
 
 ```cpp
     char a=5, b, i=1;
@@ -205,7 +207,7 @@ and the result will be in cyclic order. (-128 | 0 | 127)
 
 > **Note:** : signed bits are not disturbed in the shift operation
 
-## Enum and typedef (user defined data types)
+### Enum and typedef (user defined data types)
 
 ```cpp
                0    1    2    3    4    5   6
@@ -230,9 +232,9 @@ and the result will be in cyclic order. (-128 | 0 | 127)
 
 ---
 
-# Conditional Statements
+## Conditional Statements
 
-## Dynamic Declaration
+### Dynamic Declaration
 
 This method is not memory efficient because it is declared in the main function and will occupy the memory until the program terminates(main function gets over).
 
@@ -279,7 +281,7 @@ There is declaration and assignment in the if condition, which will return true 
 
 The memory allocated to the variable will be deleted after the block is finished executing.
 
-## Switch case - Branch and control statement
+### Switch case - Branch and control statement
 
 Switch cases are faster than if else ladder.
 

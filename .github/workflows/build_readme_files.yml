@@ -1,4 +1,4 @@
-name: Build 1_Basics.md from Files
+name: Build Readme files
 
 on:
   push:

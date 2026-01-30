@@ -3,21 +3,14 @@ name: Build 1_Basics.md from Files
 on:
   push:
     paths:
-      - Files/1_Basics/**
-      - scripts/build_basics_readme.py
+      - Files/**
+      - scripts/**
 
 permissions:
   contents: write
 
-concurrency:
-  group: repo-write
-  cancel-in-progress: false
-
 jobs:
-  build-1-basics:
-    # Only run this job for human-triggered pushes.
-    # Bot-triggered pushes (from auto-commits) are ignored to avoid recursion.
-    if: github.actor != 'github-actions[bot]'
+  build-readme-files:
     runs-on: ubuntu-latest
 
     steps:
@@ -26,7 +19,16 @@ jobs:
       - name: Build 1_Basics.md
         run: python scripts/build_basics_readme.py
 
-      - name: Commit 1_Basics.md
+      - name: Build 2_OOPC.md
+        run: python scripts/build_oopc_readme.py
+
+      - name: Build 3_STL.md
+        run: python scripts/build_stl_readme.py
+        
+      - name: Build 4_Other.md
+        run: python scripts/build_other_readme.py        
+
+      - name: Commit Readme Files
         run: |
           if git diff --quiet; then
             echo "No changes to commit"
@@ -35,6 +37,6 @@ jobs:
 
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"
-          git add 1_Basics.md
-          git commit -m "Auto-update 1_Basics.md from Files"
+          git add 1_Basics.md 2_OOPC.md 3_STL.md 4_Other.md
+          git commit -m "Auto-update readme files"
           git push

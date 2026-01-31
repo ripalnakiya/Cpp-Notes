@@ -1,4 +1,4 @@
-# IOstream
+# IO Stream
 
 Stream is flow of data.
 

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE instance-profile
+        SYSTEM "https://resources.jetbrains.com/writerside/1.0/product-profile.dtd">
+
+<instance-profile id="cn"
+                 name="C++ Notes"
+                 start-page="01_Basics.md">
+
+    <toc-element toc-title="Basics">
+        <toc-element topic="01_Basics.md"/>
+        <toc-element topic="02_Arrays.md"/>
+        <toc-element topic="03_Pointers.md" />
+        <toc-element topic="04_Functions.md" />
+    </toc-element>
+
+    <toc-element toc-title="OOPC">
+        <toc-element topic="01_Object_Oriented_Programming.md" />
+        <toc-element topic="02_Operator_Overloading.md" />
+        <toc-element topic="03_Inheritance.md" />
+        <toc-element topic="04_Polymorphism.md" />
+        <toc-element topic="05_Friend_and_Static_Members.md" />
+        <toc-element topic="06_Exception_Handling.md" />
+        <toc-element topic="07_Template_Classes.md" />
+        <toc-element topic="08_Constants_Preprocessors_and_Namespaces.md" />
+        <toc-element topic="09_Destructors.md" />
+    </toc-element>
+
+    <toc-element toc-title="STL">
+        <toc-element topic="01_Standard_Template_Library.md" />
+    </toc-element>
+
+    <toc-element toc-title="Other">
+        <toc-element topic="01_IO_stream.md" />
+        <toc-element topic="02_C++_11.md" />
+    </toc-element>
+</instance-profile>

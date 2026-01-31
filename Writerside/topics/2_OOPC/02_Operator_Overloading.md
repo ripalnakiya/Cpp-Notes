@@ -9,7 +9,7 @@ declared as friend inside a class.
 
 First, let us see basic function
 
-```cpp
+```c++
 class Complex
 {
 public:
@@ -42,7 +42,7 @@ void main()
 
 Now let us see how operators are overloaded.
 
-```cpp
+```c++
 class Complex
 {
 public:
@@ -77,7 +77,7 @@ void main()
 
 ## Operator Overloading using friend function
 
-```cpp
+```c++
 class Complex
 {
 private:
@@ -122,7 +122,7 @@ void main()
 
 First let's see a basic display function
 
-```cpp
+```c++
 class Complex
 {
 private:
@@ -151,7 +151,7 @@ void main()
 
 Now let us see Inseration Operator Overloading
 
-```cpp
+```c++
 class Complex
 {
 private:

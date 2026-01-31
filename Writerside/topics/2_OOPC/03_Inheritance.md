@@ -1,6 +1,6 @@
 # Inheritance
 
-```cpp
+```c++
 class Rectangle
 {
 private:
@@ -65,7 +65,7 @@ By default, non-parameterised constructor of base class is executed.
 
 **Program 1**
 
-```cpp
+```c++
 class Base
 {
 public:
@@ -95,7 +95,7 @@ Non-param Derived
 
 **Program 2**
 
-```cpp
+```c++
 class Base
 {
 public:
@@ -127,7 +127,7 @@ Param of Derived 10
 
 Parameterised constructor of base class must be explicitly called from derived class constructor.
 
-```cpp
+```c++
 class Base
 {
 public:
@@ -186,7 +186,7 @@ Specialization
 
 Consider these classes
 
-```cpp
+```c++
 class BasicCar
 {
 public:
@@ -208,7 +208,7 @@ public:
 
 **Branch 1**
 
-```cpp
+```c++
 void main()
 {
     BasicCar *bc;
@@ -230,7 +230,7 @@ Hence we **cannot** access the AdvanceCar methods.
 
 **Branch 2**
 
-```cpp
+```c++
 void main()
 {
     AdvanceCar *ac;

@@ -2,7 +2,7 @@
 
 ## Pointer Arithematic
 
-```cpp
+```c++
     int A[5]={2,4,6,8,10};
     int *p = A;
 
@@ -15,7 +15,7 @@
 
 Performing incerement/decrement operation doesn't increases the address by one value, but the pointer goes to the next element.
 
-```cpp
+```c++
     int A[5] = {2,4,6,8,10};
     int *p = A;
 
@@ -31,7 +31,7 @@ Performing incerement/decrement operation doesn't increases the address by one v
 
 It points to the p + 2 element.
 
-```cpp
+```c++
     int A[5] = {2,4,6,8,10};
     int *p = &A[0], *q = &A[4];
 
@@ -43,7 +43,7 @@ It points to the p + 2 element.
 
 ## Pointer to a function
 
-```cpp
+```c++
     void Display()
     {
         cout<<"Hello";
@@ -57,7 +57,7 @@ It points to the p + 2 element.
     }
 ```
 
-```cpp
+```c++
     int max(int a, int b)
     {
         return a > b ? a : b;

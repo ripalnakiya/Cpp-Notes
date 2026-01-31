@@ -4,7 +4,7 @@ They can work for any type of data
 
 **Program 1 : `int` specific class for stack**
 
-```cpp
+```c++
 class Stack
 {
 private:
@@ -55,7 +55,7 @@ void main()
 
 **Program 2 : generic class for stack**
 
-```cpp
+```c++
 template <class T>
 class Stack
 {

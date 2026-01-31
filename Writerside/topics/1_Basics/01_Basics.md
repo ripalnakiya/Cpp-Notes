@@ -88,7 +88,7 @@
 
 These are different ways to initialize int
 
-```cpp
+```c++
     int day = 1;
     int day(1);
     int day = (1);
@@ -98,7 +98,7 @@ These are different ways to initialize int
 
 ### Literals
 
-```cpp
+```c++
     int a = 10;
     int a = 010; // Octal representation if 8
     int a = 0x41; // Hexadecimal representation of 65
@@ -106,12 +106,12 @@ These are different ways to initialize int
 
 > **Note:** : the calculations will happen in decimal system only , by default
 
-```cpp
+```c++
     long price = 65359L;
     float price = 12.5F;
 ```
 
-```cpp
+```c++
     char section = 'A';
     char section = 65;
 ```
@@ -120,19 +120,19 @@ These are different ways to initialize int
 
 If a value is converted to required datatype internally, then it is called coersion.
 
-```cpp
+```c++
     char x = 65.6;          => A
 ```
 
-```cpp
+```c++
     float x = 123.45F;        => 123.45
 ```
 
-```cpp
+```c++
     float x = 123e2F;       => 12300
 ```
 
-```cpp
+```c++
     float x = 123e-2F;       => 1.23
 ```
 
@@ -140,21 +140,21 @@ If a value is converted to required datatype internally, then it is called coers
 
 If two integers are divided then, the result will also be of the integer type;
 
-```cpp
+```c++
     int a=13, b=5,c;
     c = a/b;                => 2
 ```
 
 To get original result
 
-```cpp
+```c++
     int a=13, b=5;
     float c;                                    // c should hold the float value
     c = (float) a/b;             => 2.6         // Implicit type casting
 
 ```
 
-```cpp
+```c++
     int a=13;
     float c;
     c = a / 5.0;                => 2.6
@@ -164,13 +164,13 @@ To get original result
 
 #### Compound Assignment
 
-```cpp
+```c++
     sum = sum + a + b + c;
 ```
 
 is same as the following
 
-```cpp
+```c++
     sum += a + b + c;
 ```
 
@@ -179,13 +179,13 @@ is same as the following
 When the datatype value is increased by its limit, then it will overflow
 and the result will be in cyclic order. (-128 | 0 | 127)
 
-```cpp
+```c++
     char b=127;
     b++;
     cout<<(int)b<<endl;         => -128 //since 128 value doesn't exist for char
 ```
 
-```cpp
+```c++
     char d=-128;
     d--;
     cout<<(int)d<<endl;         => 127 //since -129 value doesn't exist for char
@@ -193,13 +193,13 @@ and the result will be in cyclic order. (-128 | 0 | 127)
 
 ### Left shift and right shift
 
-```cpp
+```c++
     char a=5, b, i=1;
     b = j<<i; // left shift by 1
     cout<<(int)b<<endl;            => 10 // value is a*(2^i)
 ```
 
-```cpp
+```c++
     char a=20, b, i=1;
     b = a>>1; // right shift by 1
     cout<<(int)m<<endl;             => 10 // value is a/(2^i)
@@ -209,23 +209,23 @@ and the result will be in cyclic order. (-128 | 0 | 127)
 
 ### Enum and typedef (user defined data types)
 
-```cpp
+```c++
                0    1    2    3    4    5   6
     enum day {mon, tue, wed, thu, fri, sat, sun};
     day d = mon;    // d will get value 0;
 ```
 
-```cpp
+```c++
                       2    3    4     5   6    7
     enum day {mon=1, tue, wed, thu, fri, sat, sun};
 ```
 
-```cpp
+```c++
                       2           6    7          10
     enum day {mon=1, tue, wed=5, thu, fri, sa=9, sun};
 ```
 
-```cpp
+```c++
     typedef int marks;
     marks m1, m2, m3;
 ```
@@ -238,7 +238,7 @@ and the result will be in cyclic order. (-128 | 0 | 127)
 
 This method is not memory efficient because it is declared in the main function and will occupy the memory until the program terminates(main function gets over).
 
-```cpp
+```c++
     int c = a + b;
     if (c > 10) {
         // do something
@@ -249,7 +249,7 @@ This approach is better , that declare a variable inside a simple block and then
 
 After the block is finished executing, the memory allocated to the variable will be deleted.
 
-```cpp
+```c++
     {
         int c = a + b;
         if (c > 10)
@@ -261,7 +261,7 @@ After the block is finished executing, the memory allocated to the variable will
 
 This feature was introduced in C++17 , and it works exactly same as previous approach.
 
-```cpp
+```c++
     if(int c = a + b; c > 10)
     {
         // do something
@@ -270,7 +270,7 @@ This feature was introduced in C++17 , and it works exactly same as previous app
 
 Another way to use this feature
 
-```cpp
+```c++
     if(int e=a*b)
     {
         cout<<e<<endl;

@@ -13,7 +13,7 @@ A friend function can be:
 - global function
 - member function of another class
 
-```cpp
+```c++
 class Test
 {
     private:
@@ -44,7 +44,7 @@ A friend class can access private and protected members of other classes in whic
 
 All the functions of friend class can access private and protected members of other class
 
-```cpp
+```c++
 class Two;
 
 class One
@@ -91,7 +91,7 @@ of a class.
 
 ### Example
 
-```cpp
+```c++
 class Test
 {
 private:
@@ -137,7 +137,7 @@ Object of Inner class can be created inside the outer class.
 
 Outer class can access all the public member is Inner class(using its object).
 
-```cpp
+```c++
 class Outer
 {
     public:

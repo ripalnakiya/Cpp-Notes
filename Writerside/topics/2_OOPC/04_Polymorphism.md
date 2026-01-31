@@ -8,7 +8,7 @@ Function overriding is used for achieving runtime polymorphism.
 
 Prototype of a overriding function must be exactly same as base class function.
 
-```cpp
+```c++
 class Base
 {
 public:
@@ -44,7 +44,7 @@ int main()
 
 ## Virtual Functions
 
-```cpp
+```c++
 class BasicCar
 {
 public:
@@ -76,7 +76,7 @@ void main()
 
 Runtime Polymorphism is achieved using function overriding.
 
-```cpp
+```c++
 class BasicCar
 {
 public:
@@ -109,7 +109,7 @@ So, which function `p->start()` has to call will be resolved at runtime.
 
 Summary: class car is defined, then sub classes override, then base class method made as pure virtual function
 
-```cpp
+```c++
 class Car
 {
 public:
@@ -164,7 +164,7 @@ Pointer of abstract class can hold object of derived class.
 Derived class can must override pure virtual function, otherwise it will also become a abstract
 class.
 
-```cpp
+```c++
 class Base                              // Abstract class
 {
 public:
@@ -196,7 +196,7 @@ int main()
 }
 ```
 
-```cpp
+```c++
 class Base                                  // Interface
 {
 public:

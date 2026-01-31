@@ -20,7 +20,7 @@ Ostream is for output.
 
 ## Writing in a file
 
-```cpp
+```c++
 #include<iostream>
 #include<fstream>
 using namespace std;
@@ -39,7 +39,7 @@ int main()
 
 ## Reading from a file
 
-```cpp
+```c++
 #include<iostream>
 #include<fstream>
 using namespace std;
@@ -72,7 +72,7 @@ int main()
 
 Serialization is a process of string and retrieving state of an object.
 
-```cpp
+```c++
 class Student
 {
 private:

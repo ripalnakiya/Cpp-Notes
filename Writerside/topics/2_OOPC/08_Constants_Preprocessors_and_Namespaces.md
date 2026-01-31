@@ -14,14 +14,14 @@ or
 
 We cannot point to a constant identifier , using variable pointer.
 
-```cpp
+```c++
     const int x = 10;
     int *ptr = &x;          // Invalid Statement
 ```
 
 But this is possible,
 
-```cpp
+```c++
     const int x = 10;
     const int *ptr = &x;          // Valid Statement
 ```
@@ -32,7 +32,7 @@ In the pointers to constant, the data pointed by the pointer is constant and can
 
 #### Base Operation
 
-```cpp
+```c++
     int x = 10;
     int *ptr = &x;
     ++(*ptr);       // Valid statement
@@ -40,7 +40,7 @@ In the pointers to constant, the data pointed by the pointer is constant and can
 
 #### Operation on constant type pointer
 
-```cpp
+```c++
     int x = 10;
     const int *ptr = &x;
     ++(*ptr);       // Invalid statement (we cannot modify the data value of the pointer to constant)
@@ -54,7 +54,7 @@ It can also be written as `int const *ptr = &x;`
 
 #### Assigning another constant to the pointer
 
-```cpp
+```c++
     int x = 10;
     const int *ptr = &x;
     ++(*ptr);       // Invalid statement
@@ -70,7 +70,7 @@ Here, the pointer is NOT constant (It is a variable) , but the value pointed by 
 
 In constant pointers, the pointer points to a fixed memory location, and the value at that location can be changed because it is a variable, but the pointer will always point to the same location because it is made constant here.
 
-```cpp
+```c++
     int x = 10;
     int * (const ptr) = &x;
     ++(*ptr);       // Valid statement
@@ -83,7 +83,7 @@ In constant pointers, the pointer points to a fixed memory location, and the val
 
 The data pointed to by the pointer is constant, so cannot be changed and The pointer itself is constant, so it cannot change or point somewhere else.
 
-```cpp
+```c++
     int x = 10;
     const int * const ptr = &x;
     ++(*ptr);       // Invalid statement
@@ -97,7 +97,7 @@ The data pointed to by the pointer is constant, so cannot be changed and The poi
 
 If a Member function of a class is not allowed to change the data members of class, then we can use `const` keyword after the fucntion name.
 
-```cpp
+```c++
 class Demo
 {
     public:
@@ -114,7 +114,7 @@ class Demo
 
 ### Constant Formal Parameters
 
-```cpp
+```c++
 void fun(const int &x, const int &y)
 {
     x++;                            // This statement will give error
@@ -150,7 +150,7 @@ They also support conditional definition.
 
 ---
 
-```cpp
+```c++
 #define PI 3.14
 
 void main()
@@ -161,7 +161,7 @@ void main()
 
 ---
 
-```cpp
+```c++
 #define PI 3.14
 #define PI 3
 
@@ -175,7 +175,7 @@ void main()
 
 `ifndef` is conditional directive, which means "If not defined"
 
-```cpp
+```c++
 #define PI 3.14
 
 #ifndef PI
@@ -193,7 +193,7 @@ But since we already have defined PI, so It won't get executed.
 
 ---
 
-```cpp
+```c++
 #ifndef PI
     #define PI 3
 #endif
@@ -208,7 +208,7 @@ Since we haven't already defined the value of PI, so it will get executed.
 
 ---
 
-```cpp
+```c++
 #define maxi(a,b) (a > b ? a : b)
 
 void main()
@@ -219,7 +219,7 @@ void main()
 
 ---
 
-```cpp
+```c++
 #define msg(x) #x
 
 void main()
@@ -238,7 +238,7 @@ They are used for removing name conflict between functions, classes and objects.
 
 ### Base Problem
 
-```cpp
+```c++
 void fun()
 {
     cout<< "First" <<endl;
@@ -259,7 +259,7 @@ This program will give error that , redeclaration of funtion `fun()` is done.
 
 ### Using Namespaces
 
-```cpp
+```c++
 namespace first
 {
     void fun()
@@ -288,7 +288,7 @@ void main()
 
 ---
 
-```cpp
+```c++
 namespace first
 {
     void fun()

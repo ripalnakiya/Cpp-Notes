@@ -4,7 +4,7 @@ Constructors are used for acquiring the resources.
 
 Destructors are used for releasing the resources acquired by object of the class.
 
-```cpp
+```c++
 class Demo
 {
     public:
@@ -37,7 +37,7 @@ Destructor is called when the object goes out of scope.
 
 ## Destructors with Dynamic Objects
 
-```cpp
+```c++
 class Demo
 {
     public:
@@ -67,7 +67,7 @@ When we create object dynamically using `new` operator, only the constructor is 
 
 We need to delete the object explicitly using `delete` operator, and it will call the destructor.
 
-```cpp
+```c++
 class Demo
 {
     public:
@@ -97,7 +97,7 @@ Destructor is Called
 
 ## Use of Destructors
 
-```cpp
+```c++
 class Demo
 {
     int *ptr;
@@ -134,7 +134,7 @@ So we can include those operators in the destructor.
 
 ## Destructors in Inheritance
 
-```cpp
+```c++
 class Base
 {
     public:
@@ -179,7 +179,7 @@ Destructor Base
 
 ### Destructor for dynamic objects
 
-```cpp
+```c++
 class Base
 {
     public:
@@ -227,7 +227,7 @@ It does not call the destructor of derived class, since pointer assumes that it 
 
 ### Virtual Destructor
 
-```cpp
+```c++
 class Base
 {
     public:

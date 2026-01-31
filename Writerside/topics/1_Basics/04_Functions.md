@@ -17,7 +17,7 @@
 - Datatype is a template variable
 - Function can have multiple template variables
 
-```cpp
+```c++
     template <class T>
     T maxi(T x, T y)
     {
@@ -46,7 +46,7 @@
 - It should not return address of local variables, which will be disposed after function ends
 - It can return address of memory allocated in heap
 
-```cpp
+```c++
     int * fun(int n)
     {
         int *p = new int[n];
@@ -69,7 +69,7 @@
 - It should not return reference of its local variables
 - It is written on left side of the assignment operator
 
-```cpp
+```c++
     int& min(int &a, int &b)
     {
         if(a < b)
@@ -93,7 +93,7 @@
 - They are created in code section
 - They are history-sensitive
 
-```cpp
+```c++
     void fun()
     {
         static int v=0;

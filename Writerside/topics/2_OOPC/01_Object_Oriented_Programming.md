@@ -9,7 +9,7 @@ Features
 
 ## Class and Object
 
-```cpp
+```c++
 class Rectangle
 {
     public :
@@ -49,7 +49,7 @@ int main()
 
 ## Member Function Declaration
 
-```cpp
+```c++
 class Rectangle
 {
     public :
@@ -89,7 +89,7 @@ The classes which are defined outside the class are `Non inline` functions.
 
 > **Note** : To make a function, which is defined outside the class, `inline` we can use `inline` keyword at function declaration.
 >
-> ```cpp
+> ```c++
 > inline int area();
 > ```
 
@@ -111,7 +111,7 @@ Instead, we should use accessors and mutators to deal with the data members.
 - They can be accessed only inside the class and child classes
 - Data hiding protects data from mishandling
 
-```cpp
+```c++
 class Rectangle
 {
     private :
@@ -178,7 +178,7 @@ If it is not defined then class will have a default constructor
   - Parameterised constructor
   - Copy constructor
 
-```cpp
+```c++
 class Rectangle
 {
     private :
@@ -226,7 +226,7 @@ class Rectangle
 
 Shallow Copy constructor
 
-```cpp
+```c++
 class Test
 {
     public:
@@ -257,7 +257,7 @@ int main()
 
 Deep Copy Constructor
 
-```cpp
+```c++
 class Test
 {
     public:
@@ -287,7 +287,7 @@ int main()
 
 ### Summary
 
-```cpp
+```c++
 class Rectangle
 {
     private:

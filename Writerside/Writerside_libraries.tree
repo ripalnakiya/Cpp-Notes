@@ -5,5 +5,4 @@
 <instance-profile id="Writerside_libraries"
                   name="Writerside_libraries" is-library="true">
 
-    <toc-element topic="lib.md"/>
 </instance-profile>

@@ -4,33 +4,58 @@
 
 <instance-profile id="cn"
                  name="C++ Notes"
-                 start-page="01_Basics.md">
+                 start-page="01-fundamentals.md">
 
-    <toc-element toc-title="Basics">
-        <toc-element topic="01_Basics.md"/>
-        <toc-element topic="02_Arrays.md"/>
-        <toc-element topic="03_Pointers.md" />
-        <toc-element topic="04_Functions.md" />
+    <toc-element topic="01-fundamentals.md"/>
+    <toc-element topic="02-tokens.md"/>
+
+    <toc-element topic="01-data-types.md">
+        <toc-element topic="02-fundamental-data-types.md"/>
+        <toc-element topic="03-array.md"/>
+        <toc-element topic="04-pointer.md" />
+        <toc-element topic="05-reference.md"/>
+        <toc-element topic="06-structure.md"/>
+        <toc-element topic="07-union.md"/>
+        <toc-element topic="08-enum.md"/>
+        <toc-element topic="09-typedef.md"/>
+        <toc-element topic="10-type-safe.md"/>
     </toc-element>
 
-    <toc-element toc-title="OOPC">
-        <toc-element topic="01_Object_Oriented_Programming.md" />
-        <toc-element topic="02_Operator_Overloading.md" />
-        <toc-element topic="03_Inheritance.md" />
-        <toc-element topic="04_Polymorphism.md" />
-        <toc-element topic="05_Friend_and_Static_Members.md" />
-        <toc-element topic="06_Exception_Handling.md" />
-        <toc-element topic="07_Template_Classes.md" />
-        <toc-element topic="08_Constants_Preprocessors_and_Namespaces.md" />
-        <toc-element topic="09_Destructors.md" />
+    <toc-element topic="04-variables.md"/>
+    <toc-element topic="05-operators-and-expressions.md"/>
+    <toc-element topic="06-flow-of-control.md"/>
+    <toc-element topic="07-functions.md" />
+
+    <toc-element topic="01-object-oriented-programming.md">
+        <toc-element topic="02-nested-classes.md"/>
+        <toc-element topic="03-constructors.md"/>
+        <toc-element topic="04-inheritance.md" />
+        <toc-element topic="05-polymorphism.md" />
+        <toc-element topic="06-abstract.md"/>
+        <toc-element topic="07-multiple-inheritance.md"/>
+        <toc-element topic="08-friend.md"/>
+        <toc-element topic="09-static.md" />
+        <toc-element topic="10-destructors.md"/>
     </toc-element>
 
-    <toc-element toc-title="STL">
-        <toc-element topic="01_Standard_Template_Library.md" />
+    <toc-element topic="09-exception-handling.md" />
+    <toc-element topic="10-constants.md"/>
+    <toc-element topic="11-preprocessors.md" />
+    <toc-element topic="12-templates.md" />
+
+    <toc-element topic="01-standard-template-library.md">
+        <toc-element topic="02-pairs.md"/>
+        <toc-element topic="03-vectors.md"/>
+        <toc-element topic="04-iterators.md"/>
+        <toc-element topic="05-vector-of.md"/>
+        <toc-element topic="06-sets.md"/>
+        <toc-element topic="07-maps.md"/>
+        <toc-element topic="08-sort.md"/>
+        <toc-element topic="09-lambdas.md"/>
     </toc-element>
 
-    <toc-element toc-title="Other">
-        <toc-element topic="01_IO_stream.md" />
-        <toc-element topic="02_C++_11.md" />
-    </toc-element>
+    <toc-element topic="14-cpp-11.md" />
+    <toc-element topic="15-smart-pointers.md"/>
+    <toc-element topic="16-io-stream.md" />
+
 </instance-profile>

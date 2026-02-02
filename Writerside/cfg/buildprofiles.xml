@@ -5,7 +5,7 @@
 
     <variables>
         <header-logo>my-logo.png</header-logo>
-        <custom-favicons>fevicon.png</custom-favicons>
+        <custom-favicons>favicon.png</custom-favicons>
 
         <primary-color>aqua</primary-color>
 

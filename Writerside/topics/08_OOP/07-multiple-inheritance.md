@@ -206,29 +206,3 @@ public:
     }
 };
 ```
-
-## Composition vs Inheritance
-
-**Composition:**
-
-```c++
-class Engine {};
-class Wheels {};
-
-class Car {
-    Engine e;
-    Wheels w;
-};
-```
-
-**Inheritance:**
-
-```c++
-class Car : public Engine, public Wheels {};    // ❌ Wrong Design
-```
-
-Composition is **has-a**.
-
-Inheritance is **is-a**.
-
-> Most designs are **has-a**

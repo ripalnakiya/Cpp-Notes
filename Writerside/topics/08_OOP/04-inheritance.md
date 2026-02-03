@@ -323,3 +323,37 @@ We can never assign `BasicCar` object to `AdvanceCar` pointer.
 Because the `AdvanceCar` pointer is supposed to have `playMusic()` functionality as well,
 
 But we won't get that functionality, because we're trying to assign `BasicCar` object.
+
+## Composition vs Inheritance
+
+Composition is **has-a**.
+
+Inheritance is **is-a**.
+
+### Composition:
+
+```c++
+class Car : public Engine, public Wheels {};    // ❌ Wrong Design
+```
+
+```c++
+class Engine {};
+class Wheels {};
+
+class Car {
+    Engine e;
+    Wheels w;
+};
+```
+
+Car **has-a** Engine.
+
+### Inheritance:
+
+```c++
+class Animal {};
+
+class Dog: public Animal {};
+```
+
+Dog **is-a** Animal.

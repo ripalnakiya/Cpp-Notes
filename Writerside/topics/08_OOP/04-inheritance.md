@@ -36,6 +36,21 @@ to be a base class of another class.
 
 If we specify nothing, the class will inherit privately.
 
+## Access Control
+
+A derived class **inherits all** data members and member functions 
+of the base class as part of its object layout.
+
+This includes private, protected, and public members, 
+and therefore the size of a derived class object includes 
+all base class members, including private ones.
+
+However, the derived class has direct access 
+only to the public and protected members of the base class.
+
+Private members of the base class, although present in the derived object, 
+are accessible only to the base class itself.
+
 ## Inheritance Example
 
 ```c++
@@ -222,16 +237,6 @@ public:
     }
 };
 ```
-
-## Access Control
-
-A derived class **inherits all** members of the base class.
-However, the derived class has the **direct access privilege** only to 
-non-private members of base class.
-
-Private members of base class are **inherited** by derived class.
-But they are **not directly accessible** to 
-the member functions of derived class and objects of derived class.
 
 ## Generalization and Specialization
 

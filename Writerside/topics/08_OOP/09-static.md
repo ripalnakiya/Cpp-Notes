@@ -7,7 +7,7 @@
 - **Lifetime:** Entire program (exists from start to end)
 - Value persists across function calls
 
-<br>
+<br></br>
 
 - **Use cases:**
   - Counting function calls

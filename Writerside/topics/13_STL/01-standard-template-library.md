@@ -1,14 +1,15 @@
 # Standard Template Library
+<show-structure depth="2"/>
 
-STL is a collection of generic classes and functions that give you:
-- Ready-made data structures
-- Algorithms to work on them
-- Iterators to glue everything together
+- STL is a collection of generic classes and functions that give you:
+  - Ready-made data structures
+  - Algorithms to work on them
+  - Iterators to glue everything together
 
-All of this is:
-- Type-safe
-- Fast (usually very fast)
-- Battle-tested by decades of human suffering
+- All of this is:
+  - Type-safe
+  - Fast (usually very fast)
+  - Battle-tested by decades of human suffering
 
 ## Containers
 
@@ -57,12 +58,12 @@ Use these when order doesn’t matter and speed does.
 
 They let algorithms work on containers without caring what container it is.
 
-Types:
-- Input
-- Output
-- Forward
-- Bidirectional
-- Random-access (vector, deque)
+- Types:
+  - Input
+  - Output
+  - Forward
+  - Bidirectional
+  - Random-access (vector, deque)
 
 ```c++
 for (auto it = v.begin(); it != v.end(); it++) {
@@ -74,13 +75,13 @@ for (auto it = v.begin(); it != v.end(); it++) {
 
 Containers hold data, algorithms manipulate it.
 
-Some classics:
-- `sort()`
-- `reverse()`
-- `binary_search()`
-- `find()`
-- `count()`
-- `max_element()`
+- Some classics:
+  - `sort()`
+  - `reverse()`
+  - `binary_search()`
+  - `find()`
+  - `count()`
+  - `max_element()`
 
 ```c++
 sort(v.begin(), v.end());

@@ -1,4 +1,5 @@
 # Pointer
+<show-structure depth="2"/>
 
 Pointer is a variable that holds a memory address of a resource.
 
@@ -45,6 +46,7 @@ but the pointer goes to the next element.
 ```
 
 > Summery : Pointer arithmetic is type-aware and advances by sizeof(type), not by raw bytes.
+{style="note"}
 
 ### Two Pointers
 
@@ -104,10 +106,11 @@ delete iPtr;
 delete[] iArr;
 ```
 
-> Memory Leak: Improper use of new and delete may lead to memory leaks.
+> **Memory Leak:** Improper use of new and delete may lead to memory leaks.
+{style="warning"}
 
-> Orphaned memory block: A block that is still allocated, but nothing can access it.
-
+> **Orphaned memory block:** A block that is still allocated, but nothing can access it.
+{style="warning"}
 
 ## Pointers and Arrays
 

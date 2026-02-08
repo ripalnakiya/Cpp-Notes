@@ -1,4 +1,5 @@
 # Union
+<show-structure depth="2"/>
 
 A union lets us store different data types in the same memory location. 
 
@@ -26,10 +27,10 @@ d.f = 3.14f;    // overwrites the same memory as a float
 sizeof(Data) == max(sizeof(int), sizeof(float), sizeof(char));
 ```
 
-All members:
-- Start at the same address
-- Share the same bytes
-- Are mutually exclusive in practice
+- All members:
+  - Start at the same address
+  - Share the same bytes
+  - Are mutually exclusive in practice
 
 ## Important Info
 

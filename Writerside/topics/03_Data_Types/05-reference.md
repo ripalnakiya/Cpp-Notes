@@ -1,4 +1,5 @@
 # Reference
+<show-structure depth="2"/>
 
 A reference is an alias for an existing variable.
 

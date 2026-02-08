@@ -1,4 +1,5 @@
 # Static
+<show-structure depth="2"/>
 
 ## Static Variables
 
@@ -6,10 +7,12 @@
 - **Lifetime:** Entire program (exists from start to end)
 - Value persists across function calls
 
-**Use cases:**
-- Counting function calls
-- Caching values
-- Maintaining state without global variables
+<br>
+
+- **Use cases:**
+  - Counting function calls
+  - Caching values
+  - Maintaining state without global variables
 
 ```c++
 void fun()

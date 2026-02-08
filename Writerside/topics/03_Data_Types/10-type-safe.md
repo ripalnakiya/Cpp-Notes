@@ -1,4 +1,5 @@
 # Type safe
+<show-structure depth="2"/>
 
 The language prevents you from using a value as the wrong type
 and catches such mistakes at compile time (or runtime)

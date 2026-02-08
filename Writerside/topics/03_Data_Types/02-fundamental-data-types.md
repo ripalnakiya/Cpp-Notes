@@ -1,4 +1,5 @@
 # Fundamental data types
+<show-structure depth="2"/>
 
 **Integer Types**
 
@@ -82,6 +83,7 @@ These are different ways to initialize `int`
 ```
 
 > **Note:** : the calculations will happen in decimal system only , by default
+{style="note"}
 
 ```c++
     long price = 65359L;
@@ -148,10 +150,10 @@ int b = 2;
 double c = a / b;  // result = 2, not 2.5
 ```
 
-Why?
-- `a / b` is integer division
-- Result becomes `2`
-- Then it’s coerced to `2.0`
+- Why?
+  - `a / b` is integer division
+  - Result becomes `2`
+  - Then it’s coerced to `2.0`
 
 Too late. Damage done.
 

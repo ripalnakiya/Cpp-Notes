@@ -1,4 +1,5 @@
 # Templates
+<show-structure depth="2"/>
 
 Templates are blueprints for code.
 
@@ -44,6 +45,7 @@ double square(double);
 > We can use `class` instead of `typename`
 > 
 > `T` is a type placeholder, We can write `Foo` as well
+{style="note"}
 
 ## Template Function
 

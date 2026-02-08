@@ -1,4 +1,5 @@
 # Sets
+<show-structure depth="2"/>
 
 ## Set
 
@@ -109,9 +110,9 @@ us.find(5);       // O(1) avg
 unordered_set<pair<int,int>> us; // ❌ won’t compile
 ```
 
-Needs:
-- Custom hash
-- Or lambda hash
+- Needs:
+  - Custom hash
+  - Or lambda hash
 
 ## Summary
 

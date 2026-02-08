@@ -1,13 +1,14 @@
 # Smart Pointers
+<show-structure depth="2"/>
 
 They automatically deallocate the heap memory, when objects goes out of scope.
 
-**Why smart pointers exist ?** Raw pointers don’t own anything. They just point, while we:
-- forget to delete
-- delete twice
-- delete too early
-- delete too late
-- delete the wrong thing
+- **Why smart pointers exist ?** Raw pointers don’t own anything. They just point, while we:
+  - forget to delete
+  - delete twice
+  - delete too early
+  - delete too late
+  - delete the wrong thing
 
 ## Base Problem
 
@@ -76,16 +77,16 @@ So, we don't have to worry about deallocating the heap memory.
 
 ## Types of Smart Pointers
 
-## 1. unique_ptr
+### 1. unique_ptr
 
 A resource can be pointed by exactly one pointer.
 
-Properties:
-- Exclusive ownership
-- Cannot be copied
-- Can be moved
-- Zero overhead compared to raw pointer
-- Best default choice
+- Properties:
+  - Exclusive ownership
+  - Cannot be copied
+  - Can be moved
+  - Zero overhead compared to raw pointer
+  - Best default choice
 
 ```c++
 unique_ptr<int> p1 = make_unique<int>(10);
@@ -95,12 +96,12 @@ unique_ptr<int> p1 = make_unique<int>(10);
 unique_ptr<int> p2 = move(p1); // ownership transferred
 ```
 
-After `move`:
-- `p2` owns the memory
-- `p1` becomes `nullptr`
-- No memory leak, no double delete
+- After `move`:
+  - `p2` owns the memory
+  - `p1` becomes `nullptr`
+  - No memory leak, no double delete
 
-## 2. shared_ptr
+### 2. shared_ptr
 
 More than one pointer can point to the same resource.
 
@@ -113,7 +114,7 @@ std::shared_ptr<int> p2 = p1;
 std::shared_ptr<int> p3 = p2;
 ```
 
-Reference count: 3
+Reference count: `3`
 
 When `p1`, `p2`, and `p3` all die, the object dies too.
 
@@ -121,7 +122,7 @@ When `p1`, `p2`, and `p3` all die, the object dies too.
 p.use_count(); // for debugging, returns the reference count
 ```
 
-## 3. weak_ptr
+### 3. weak_ptr
 
 It is almost same as `shared_ptr`. 
 
@@ -141,8 +142,8 @@ struct B {
 
 A owns B, B owns A. Reference count never reaches zero.
 
-A `weak_ptr`:
-- Does NOT increase reference count
-- Does NOT own the object
-- Can observe safely
-- Useful to avoid deadlock
+- A `weak_ptr`:
+  - Does NOT increase reference count
+  - Does NOT own the object
+  - Can observe safely
+  - Useful to avoid deadlock

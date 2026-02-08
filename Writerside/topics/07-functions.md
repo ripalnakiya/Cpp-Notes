@@ -1,8 +1,9 @@
 # Functions
+<show-structure depth="2"/>
 
-The parameters that appear in 
-- a function call statement are **actual** parameters.
-- function definition are **formal** parameters.
+- The parameters that appear in 
+  - a function call statement are **actual** parameters.
+  - function definition are **formal** parameters.
 
 ## Parameter Passing Techniques
 

@@ -1,4 +1,5 @@
 # IO Stream
+<show-structure depth="2"/>
 
 Stream is flow of data.
 

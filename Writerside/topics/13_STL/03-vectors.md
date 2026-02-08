@@ -1,14 +1,15 @@
 # Vectors
+<show-structure depth="2"/>
 
 ```c++
 std::vector<T>
 ```
 
-A dynamic array that:
-- Stores elements in contiguous memory
-- Grows automatically
-- Supports random access
-- Knows its own size
+- A dynamic array that:
+  - Stores elements in contiguous memory
+  - Grows automatically
+  - Supports random access
+  - Knows its own size
 
 ```c++
 vector<int> v = {1, 2, 3};

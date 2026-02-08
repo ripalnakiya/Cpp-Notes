@@ -1,12 +1,12 @@
 # Object Oriented Programming
+<show-structure depth="2"/>
 
-Features
-
-- Abstraction
-- Encapsulation
-- Inheritance
-- Polymorphism
-- Modularity
+- Features
+  - Abstraction
+  - Encapsulation
+  - Inheritance
+  - Polymorphism
+  - Modularity
 
 ## Class and Object
 
@@ -52,8 +52,7 @@ int main()
 
 ### private
 
-The default for classes.
-
+- The default for classes.
 - Members are accessible only inside the same class
 - Not accessible from:
   - Objects
@@ -120,13 +119,17 @@ The classes which are defined inside the class are `inline` functions by default
 
 > `inline` functions are copied in the main function at the place of function call.
 >
-> This increases the compiler overhead of copying and pasting the `inline` functions and making the main function/source code larger.
+> This increases the compiler overhead of copying and pasting 
+> the `inline` functions and making the main function/source code larger.
+{style="note"}
 
 The functions which are defined outside the class are `non inline` functions.
 
-> To make a function, which is defined outside the class, `inline` we can use `inline` keyword at function declaration.
+> To make a function, which is defined outside the class, 
+> `inline` we can use `inline` keyword at function declaration.
 >
 > `inline int area();`
+{style="note"}
 
 ## Types of member functions
 
@@ -174,7 +177,7 @@ class Rectangle
 };
 ```
 
-## this pointer
+## `this` pointer
 
 `this` is an implicit pointer available inside non-static member functions of a class.
 
@@ -244,3 +247,4 @@ c.increment().increment().increment();
 ```
 > `friend` functions are not member functions of class, 
 > so they can't access `this` pointer
+{style="warning"}

@@ -1,9 +1,10 @@
 # Flow of Control
+<show-structure depth="2"/>
 
-In a program, the statements may get executed
-- Sequentially
-- Selectively (Decision construct)
-- Iteratively (Looping construct)
+- In a program, the statements may get executed
+  - Sequentially
+  - Selectively (Decision construct)
+  - Iteratively (Looping construct)
 
 ## Selection Statements
 
@@ -42,21 +43,17 @@ if (condition 1)
 
 ## Jump Statements
 
-**1. `break`**
+1. `break`
+   - Immediately exits the closest enclosing loop or `switch`.
 
-Immediately exits the closest enclosing loop or `switch`.
+2. `continue`
+   - Skips the remaining code in the current iteration
+   - Jumps to the next iteration
+   - Works only in loops
 
-**2. `continue`**
-
-- Skips the remaining code in the current iteration
-- Jumps to the next iteration
-- Works only in loops
-
-**3. `goto`**
-
-- Works inside the same function
-- It Uses labels
-
+3. `goto`
+   - Works inside the same function
+   - It Uses labels
 ```c++
 label:
     // code
@@ -64,7 +61,6 @@ label:
 goto label;
 ```
 
-**4. `return`**
-
-- Exits the function immediately
-- Optionally returns a value
+4. `return`
+   - Exits the function immediately
+   - Optionally returns a value

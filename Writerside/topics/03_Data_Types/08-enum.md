@@ -1,4 +1,5 @@
 # Enums
+<show-structure depth="2"/>
 
 An enum (enumeration) is a user-defined data type that represents a set of named integral constants.
 

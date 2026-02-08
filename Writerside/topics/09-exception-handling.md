@@ -1,4 +1,5 @@
 # Exception Handling
+<show-structure depth="2"/>
 
 ```c++
 #include <iostream>

@@ -1,4 +1,5 @@
 # Polymorphism
+<show-structure depth="2"/>
 
 It is the ability for data or message to be processed in more than one form.
 
@@ -7,10 +8,10 @@ It is the ability for data or message to be processed in more than one form.
 When more than one function have the same name, 
 but different parameter list, then they are overloaded functions.
 
-Overloaded function may have:
-1. Different type of parameters
-2. Different number of parameters
-3. Different sequence of parameters
+- Overloaded function may have:
+  1. Different type of parameters
+  2. Different number of parameters
+  3. Different sequence of parameters
 
 Return type the is not considered in overloading.
 
@@ -64,6 +65,7 @@ Function overloading is used for achieving **compile time polymorphism**
 
 > Using of default arguments gives appearance of overloading, 
 > but using overloading instead of default arguments is more beneficial
+{style="note"}
 
 ## Operator Overloading
 
@@ -73,6 +75,7 @@ Operators can be overloaded using **member functions** or **friend functions**.
 
 > Global functions can access private and protected members 
 of an object if they are declared as friend inside a class.
+{style="note"}
 
 ### Operator overloading using member function
 
@@ -316,13 +319,11 @@ int main()
 }
 ```
 
-**When:**
-
-1. The `Base` class function is declared `virtual`, and it is overridden in derived class.
-2. And the `Base` class pointer is pointing to the `Derived` class object.
+- **When:**
+  1. The `Base` class function is declared `virtual`, and it is overridden in derived class.
+  2. And the `Base` class pointer is pointing to the `Derived` class object.
 
 **Then:**
-
 The function call `b->start()` is resolved at runtime 
 because `start()` is virtual and invoked via a base class pointer/reference, 
 and the decision is made using the actual object type through dynamic dispatch.
@@ -331,3 +332,4 @@ and the decision is made using the actual object type through dynamic dispatch.
 > based on the **actual object type, not the pointer type**.
 > 
 > Hence, it is called **runtime polymorphism**.
+{style="note"}

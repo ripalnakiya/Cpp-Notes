@@ -1,4 +1,5 @@
 # Lambdas
+<show-structure depth="2"/>
 
 They are inline functions which can be used for short snippets of code 
 that are not going to be reused and therefore do not require a name.
@@ -27,9 +28,9 @@ void main()
 
 Return type is usually inferred.
 
-But required if:
-- Multiple return paths
-- Confusing types
+- But required if:
+  - Multiple return paths
+  - Confusing types
 
 ```c++
 [](int x) -> double {
@@ -158,9 +159,9 @@ auto add = [](int a, int b) {
 };
 ```
 
-It creates:
-- A compiler-generated class
-- With an overloaded `operator()`
+- It creates:
+  - A compiler-generated class
+  - With an overloaded `operator()`
 
 ```c++
 // So, this

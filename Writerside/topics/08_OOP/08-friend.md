@@ -1,4 +1,5 @@
 # Friend
+<show-structure depth="2"/>
 
 ## Friend Function
 
@@ -8,9 +9,9 @@ of the class.
 
 They can access members of a class using the object.
 
-A friend function can be:
-1. Global function
-2. Member function of another class
+- A friend function can be:
+  1. Global function
+  2. Member function of another class
 
 ```c++
 

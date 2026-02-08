@@ -1,4 +1,5 @@
 # Fundamentals
+<show-structure depth="2"/>
 
 ## Compiler vs Interpreter
 
@@ -20,6 +21,7 @@
     - Example: C++ supports object-oriented programming.
 
 > C++ is multi-paradigm. It supports procedural, object-oriented, and even functional styles.
+{style="note"}
 
 ## Header File
 
@@ -131,6 +133,7 @@ namespace math {
 ```
 
 > Namespaces prevent name collisions
+{style="note"}
 
 ```c++
 std::sort

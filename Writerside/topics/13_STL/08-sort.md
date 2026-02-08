@@ -1,4 +1,5 @@
 # Sort
+<show-structure depth="2"/>
 
 ## sort
 
@@ -9,10 +10,10 @@ std::sort(begin, end);
 
 **What algorithm does `std::sort` use?** Introsort
 
-Introsort =
-- Quicksort (fast on average)
-- Heapsort (safe worst-case)
-- Insertion sort (tiny ranges)
+- Introsort =
+  - Quicksort (fast on average)
+  - Heapsort (safe worst-case)
+  - Insertion sort (tiny ranges)
 
 ### Complexity
 
@@ -33,10 +34,10 @@ Introsort =
 std::stable_sort(begin, end);
 ```
 
-What it uses
-- Typically merge sort
-- Guaranteed stability
+- What it uses
+  - Typically merge sort
+  - Guaranteed stability
 
-Complexity
-- Time: O(n log n)
-- Space: O(n)
+- Complexity
+  - Time: O(n log n)
+  - Space: O(n)

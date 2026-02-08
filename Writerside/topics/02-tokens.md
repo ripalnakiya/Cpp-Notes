@@ -1,4 +1,5 @@
 # Tokens
+<show-structure depth="2"/>
 
 A token is the smallest individual element in a C++ program that has meaning to the compiler.
 
@@ -31,10 +32,10 @@ Names given by the programmer to variables, functions, classes, etc.
 sum, totalMarks, calculateSalary
 ```
 
-Rules:
-- Must start with a letter or `_`
-- Can contain letters, digits, `_`
-- Cannot be a keyword
+- Rules:
+  - Must start with a letter or `_`
+  - Can contain letters, digits, `_`
+  - Cannot be a keyword
 
 **3. Literals (Constants)**
 

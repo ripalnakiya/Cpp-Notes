@@ -1,4 +1,5 @@
 # Variables
+<show-structure depth="2"/>
 
 ## Declaring Variables with Limited Scope
 
@@ -65,7 +66,9 @@ Here:
 
 Again, the variable lives only as long as necessary.
 
-> If there is declaration or assignment in the `if` condition, then it will return true and the block will get executed.
+> If there is declaration or assignment in the `if` condition, 
+> then it will return true and the block will get executed.
+{style="note"}
 
 If the expression in the `if` condition evaluates to `0`,
 then `if` condition will not be executed, because expression has evaluated to `false`.

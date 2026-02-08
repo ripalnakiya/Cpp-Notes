@@ -1,7 +1,7 @@
 # Constructors
+<show-structure depth="2"/>
 
-Constructor is used for initializing an object
-
+- Constructor is used for initializing an object
 - Constructor will have same name as class name
 - It will not have a return type
 - It is called when object is created
@@ -103,12 +103,11 @@ a.data ----\
 b.data ----/
 ```
 
-**Why this is bad ?**
-
-When one object is destroyed:
-- Memory gets freed
-- The other object still points to it
-- Boom: double delete / dangling pointer / undefined behavior
+- **Why this is bad ?**
+  - When one object is destroyed:
+    - Memory gets freed
+    - The other object still points to it
+    - Boom: double delete / dangling pointer / undefined behavior
 
 ### Deep Copy
 

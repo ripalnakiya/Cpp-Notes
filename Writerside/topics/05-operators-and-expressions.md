@@ -1,4 +1,5 @@
 # Operators and Expressions
+<show-structure depth="2"/>
 
 `%` operator can only be performed on integer types (`int` and `char`), but not on `float`.
 
@@ -34,3 +35,4 @@ and the result will be in cyclic order. `(-128 | 0 | 127)`
 ```
 
 > **Note:** : signed bits are not disturbed in the shift operation
+{style="warning"}

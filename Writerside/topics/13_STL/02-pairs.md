@@ -1,12 +1,13 @@
 # Pairs
+<show-structure depth="2"/>
 
 ```c++
 std::pair<T1, T2>
 ```
 
-It stores:
-- `first` → type `T1`
-- `second` → type `T2`
+- It stores:
+  - `first` → type `T1`
+  - `second` → type `T2`
 
 ```c++
 pair<int, string> p = {1, "apple"};
@@ -38,9 +39,9 @@ cout << p.first << " " << p.second;
 
 Pairs are compared lexicographically.
 
-Order:
-- Compare `first`
-- If equal, compare `second`
+- Order:
+  - Compare `first`
+  - If equal, compare `second`
 
 ```c++
 pair<int, int> a = {1, 5};

@@ -1,4 +1,5 @@
 # Iterators
+<show-structure depth="2"/>
 
 Iterator is a pointer to the container.
 

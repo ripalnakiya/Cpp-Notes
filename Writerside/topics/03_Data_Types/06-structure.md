@@ -1,4 +1,5 @@
 # Structure
+<show-structure depth="2"/>
 
 A structure is a user-defined data type that 
 groups related variables of different types under one name. 

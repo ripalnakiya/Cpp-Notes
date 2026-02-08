@@ -1,4 +1,5 @@
 # Maps
+<show-structure depth="2"/>
 
 ## Map
 
@@ -34,9 +35,9 @@ pair<const Key, Value>
 mp[5] = "five";
 ```
 
-If key 5 does not exist:
-- It gets inserted
-- Value is default-constructed
+- If key 5 does not exist:
+  - It gets inserted
+  - Value is default-constructed
 
 **`at()`**
 
@@ -144,10 +145,10 @@ ump[1] = "one";
 
 ### No range queries
 
-You do not get:
-- `lower_bound`
-- `upper_bound`
-- Sorted iteration
+- You do not get:
+  - `lower_bound`
+  - `upper_bound`
+  - Sorted iteration
 
 ### Hashing
 

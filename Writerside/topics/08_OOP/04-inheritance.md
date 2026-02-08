@@ -1,4 +1,5 @@
 # Inheritance
+<show-structure depth="2"/>
 
 It is the capability of a class to derive properties of another class.
 
@@ -238,27 +239,23 @@ public:
 };
 ```
 
-## Generalization and Specialization
+## Purpose of Inheritance:
 
-**Purpose of Inheritance:**
+1. **Generalization**
+   - It is bottom-up approach.
+   - Derived classes already exists, but to simplify things we make a generalized Base class.
+   - We can use a generalized(same) name for different classes : polymorphic
+   - For example, Car - Innova, Swift, Fortuner
+     - We only need to learn How to Drive a car, then we can ride any car we want (Innova, Swift, Fortuner)
+   - Purpose of Generalization is to achieve `Polymorphism`
 
-**1. Generalization**
-
-- It is bottom-up approach.
-- Derived classes already exists, but to simplify things we make a generalized Base class.
-- We can use a generalized(same) name for different classes : polymorphic
-- For example, Car - Innova, Swift, Fortuner
-  - We only need to learn How to Drive a car, then we can ride any car we want (Innova, Swift, Fortuner)
-- Purpose of Generalization is to achieve `Polymorphism`
-
-**2. Specialization**
-
-- It is top-down approach.
-- Derived classes are inherited from already existing base class (More specilized version of base class is made)
-- It shares it features to its child classes
-- For example, Rectangle - Cuboid
-  - Cuboid inherits the features of Rectangle.
-- Purpose of Specialization is to achieve `Inheritance`
+2. **Specialization**
+   - It is top-down approach.
+   - Derived classes are inherited from already existing base class (More specilized version of base class is made)
+   - It shares it features to its child classes
+   - For example, Rectangle - Cuboid
+     - Cuboid inherits the features of Rectangle.
+   - Purpose of Specialization is to achieve `Inheritance`
 
 ## Base Class Pointer and Derived Class Object
 
@@ -305,6 +302,7 @@ Hence we **cannot** access the `AdvanceCar` methods.
 >
 > Base Class Pointer can Hold the object of Derived class, 
 > But It can only call those methods which are defined in the Base class.
+{style="note"}
 
 **Branch 2**
 
@@ -330,7 +328,7 @@ Composition is **has-a**.
 
 Inheritance is **is-a**.
 
-### Composition:
+### Composition
 
 ```c++
 class Car : public Engine, public Wheels {};    // ❌ Wrong Design
@@ -348,7 +346,7 @@ class Car {
 
 Car **has-a** Engine.
 
-### Inheritance:
+### Inheritance
 
 ```c++
 class Animal {};

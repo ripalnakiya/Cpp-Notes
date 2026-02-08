@@ -1,4 +1,5 @@
 # Nested Classes
+<show-structure depth="2"/>
 
 Nested class works exactly the same as any other class, 
 similar to declared outside the outer class.
@@ -23,6 +24,7 @@ obj.hello();
 > A nested class is NOT automatically tied to an object of the outer class.
 >
 >It is just scoped inside the outer class.
+{style="note"}
 
 ## Access rules
 
@@ -147,9 +149,9 @@ Outer::PublicOne p; // ✅
 In C++, nested classes behave like static members of the outer class, 
 even though you never write the word `static`.
 
-Meaning:
-- They do not need an instance of `Outer`
-- They do not carry outer object state
+- Meaning:
+  - They do not need an instance of `Outer`
+  - They do not carry outer object state
 
 ```c++
 class Outer {

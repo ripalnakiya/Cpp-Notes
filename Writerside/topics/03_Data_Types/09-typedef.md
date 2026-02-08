@@ -1,4 +1,5 @@
 # typedef
+<show-structure depth="2"/>
 
 `typedef` is used to create a type alias for an existing data type.
 

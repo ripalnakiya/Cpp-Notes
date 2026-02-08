@@ -1,4 +1,5 @@
 # Destructors
+<show-structure depth="2"/>
 
 Constructors are used for acquiring the resources.
 
@@ -12,6 +13,7 @@ Destructors are used for releasing the resources acquired by object of the class
 
 > Only those functions that have access to both constructor and destructor of a class,
 > can create object of that class.
+{style="warning"}
 
 ```c++
 class Demo {
@@ -253,10 +255,10 @@ Destructor Derived
 Destructor Base
 ```
 
-We should make the destructor `virtual` if:
-- The class is intended to be **used polymorphically**
-- You ever plan to **delete derived objects via a base pointer**
-- The class **has any virtual function** (strong rule of thumb)
+- We should make the destructor `virtual` if:
+  - The class is intended to be **used polymorphically**
+  - You ever plan to **delete derived objects via a base pointer**
+  - The class **has any virtual function** (strong rule of thumb)
 
 ```c++
 class Drawable {

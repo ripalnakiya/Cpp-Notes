@@ -1,4 +1,5 @@
 # Constants
+<show-structure depth="2"/>
 
 syntax:
 

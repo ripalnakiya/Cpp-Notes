@@ -1,4 +1,5 @@
 # Abstract
+<show-structure depth="2"/>
 
 ## Abstract Function
 

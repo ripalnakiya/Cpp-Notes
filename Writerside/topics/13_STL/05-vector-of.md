@@ -1,4 +1,5 @@
 # Vector Of
+<show-structure depth="2"/>
 
 ## Vector of pairs
 

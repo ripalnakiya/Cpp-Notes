@@ -1,10 +1,11 @@
 # Preprocessors
+<show-structure depth="2"/>
 
 Preprocessors are instructions to the compiler.
 
 They are processed before compilation (replacement is performed before the compilation).
 
-**They are used for:**
+- **They are used for:**
   - defining symbolic constants
   - defining functions
   - conditional operations

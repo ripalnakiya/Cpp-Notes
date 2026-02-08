@@ -1,4 +1,5 @@
 # Multiple Inheritance
+<show-structure depth="2"/>
 
 A class inherits from more than one base class.
 
@@ -69,9 +70,9 @@ Bat b;
 b.age = 5; // 💥 ERROR: ambiguous
 ```
 
-**Why?** Because Bat contains two copies of `Animal`.
-1. One via `Mammal`
-2. One via `Bird`
+- **Why?** Because Bat contains two copies of `Animal`.
+  1. One via `Mammal`
+  2. One via `Bird`
 
 C++ refuses to guess which `age` you meant.
 
@@ -117,11 +118,11 @@ class Bat : public Mammal, public Bird {
 };
 ```
 
-If both `Mammal` and `Bird` could initialize `Animal`, then:
-- Which constructor should run?
-- `Animal(10)` or `Animal(20)`?
-- Both? That’s illegal.
-- Pick one? That’s arbitrary.
+- If both `Mammal` and `Bird` could initialize `Animal`, then:
+  - Which constructor should run?
+  - `Animal(10)` or `Animal(20)`?
+  - Both? That’s illegal.
+  - Pick one? That’s arbitrary.
 
 So the language makes a rule: **The most-derived class initializes the virtual base.**
 

@@ -9,6 +9,29 @@
 | Compilation happens only once. After that, the program can run **without the compiler**.                              | Translation happens **every time** the program is run, so an interpreter is required each time.         |
 | Compiled programs generally execute **faster** because they run directly on the machine.                              | Interpreted programs are usually **slower** because execution happens within the interpreter.           |
 
+## Compiling a Cpp file
+
+```shell
+g++ -o source source.cpp
+./source
+```
+
+- Breakdown:
+  - **`g++`**: The GNU C++ compiler.
+  - **`source.cpp`**: Your C++ file.
+  - **`-o program`**: Output flag. “Name the final executable `source` instead of the default `a.out`”
+
+- So this command:
+  - ➡️ Compiles `source.cpp`
+  - ➡️ Produces an executable file named program
+
+If you skip `-o source`:
+
+```shell
+g++ source.cpp
+./a.out
+```
+
 ## Programming Paradigms
 
 1. Monolithic Programming

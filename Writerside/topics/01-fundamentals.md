@@ -23,7 +23,7 @@ g++ -o source source.cpp
 
 - So this command:
   - ➡️ Compiles `source.cpp`
-  - ➡️ Produces an executable file named program
+  - ➡️ Produces an executable file named `source`
 
 If you skip `-o source`:
 
